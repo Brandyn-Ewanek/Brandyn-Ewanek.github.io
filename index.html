@@ -3,35 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Website!</title>
+    <title>A Hub for DataSimple.education</title>
     <style>
-        body { 
-            font-family: sans-serif; 
-            line-height: 1.6; 
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
             margin: 0 auto;
-            max-width: 800px; 
             padding: 2em;
         }
-        h1, h2 { text-align: center; }
+        header, footer {
+            text-align: center;
+            padding: 2em 0;
+            background-color: #343a40;
+            color: #fff;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        h2 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 0.5em;
+            margin-top: 2em;
+            color: #0056b3;
+        }
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1.5em;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5em;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            flex-basis: 30%;
+            text-align: center;
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #343a40;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 1em;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+        footer p {
+            margin: 0;
+        }
+        a {
+            color: #007bff;
+        }
     </style>
 </head>
 <body>
 
-    <h1>My GitHub Pages Site</h1>
-    <p style="text-align: center;">Welcome to my new website hosted on GitHub Pages.</p>
+    <header>
+        <h1>DataSimple.education Hub</h1>
+        <p>A personal landing page highlighting the curriculum and philosophy of learning data science.</p>
+    </header>
 
-    <hr> <h2>An Introduction to DataSimple.education</h2>
-    
-    <p>
-        <strong>DataSimple.education</strong> is an online learning platform focused on teaching Python specifically for the field of data science. Its core philosophy is that learning to code for data analysis is a practical skill, much like learning to paint, and should be taught differently from traditional computer science.
-    </p>
-    <p>
-        The platform emphasizes a targeted and focused approach, teaching Python as a tool to interact with powerful data science libraries rather than as an abstract programming language. It offers specialized tracks in Data Analysis, Machine Learning, and Deep Learning, complemented by hands-on projects.
-    </p>
-    <p>
-        Learn more at the official site: 
-        <a href="https://www.datasimple.education/" target="_blank" rel="noopener noreferrer">DataSimple.education</a>.
-    </p>
+    <main class="container">
+
+        <section id="introduction">
+            <h2>Our Core Philosophy: Data Science as a Practical Skill</h2>
+            <p>
+                <strong>DataSimple.education</strong> operates on a simple but powerful premise: learning Python for data science is a practical craft, not an abstract exercise in computer science. We teach Python as a **tool** to unlock the power of essential data libraries like Pandas, Scikit-learn, and TensorFlow.
+            </p>
+            <p>
+                This focused approach avoids the unnecessary complexities of traditional programming courses, allowing you to build job-ready skills faster and more effectively. The goal isn't to learn every detail of Python, but to master its application in analyzing data and building models.
+            </p>
+        </section>
+
+        <section id="learning-tracks">
+            <h2>Core Learning Tracks 🚀</h2>
+            <p>The curriculum is structured into three specialized tracks, guiding you from fundamental analysis to advanced machine learning.</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Data Analysis</h3>
+                    <p>The foundation of your journey. Master Pandas for data manipulation, cleaning, and exploration to uncover insights from complex datasets.</p>
+                    <a href="https://www.datasimple.education/data-analysis" class="cta-button" target="_blank" rel="noopener noreferrer">Explore Analysis</a>
+                </div>
+                <div class="card">
+                    <h3>Machine Learning</h3>
+                    <p>Move from analysis to prediction. Learn to use Scikit-learn to build, train, and evaluate powerful machine learning models.</p>
+                    <a href="https://www.datasimple.education/machine-learning" class="cta-button" target="_blank" rel="noopener noreferrer">Explore ML</a>
+                </div>
+                <div class="card">
+                    <h3>Deep Learning</h3>
+                    <p>Dive into the world of neural networks. Use TensorFlow and Keras to tackle advanced problems in image recognition, natural language, and more.</p>
+                    <a href="https://www.datasimple.education/deep-learning" class="cta-button" target="_blank" rel="noopener noreferrer">Explore DL</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Learn by Doing: Hands-On Projects</h2>
+            <p>
+                Theory is important, but practical application is essential. Every concept taught on DataSimple.education is reinforced through hands-on projects that mirror real-world data science challenges. You'll build a portfolio of work that demonstrates your capabilities to potential employers.
+            </p>
+             <a href="https://www.datasimple.education/projects" class="cta-button" target="_blank" rel="noopener noreferrer">View Projects</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Learn more and start your journey today at the official site.</p>
+        <a href="https://www.datasimple.education/" target="_blank" rel="noopener noreferrer">www.datasimple.education</a>
+    </footer>
 
 </body>
 </html>
